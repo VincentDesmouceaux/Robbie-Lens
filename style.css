@@ -10,6 +10,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 h1 {
   font-weight: 3.5em;
   color: #a5b4fc;
@@ -43,8 +47,15 @@ em {
   background: linear-gradient(90deg, #8e86b5, #acaeed);
   border-radius: 50px;
 }
+.degrade:hover {
+  background: linear-gradient(90deg, #696484, #8788ba);
+  text-decoration: none;
+}
 
 .border {
   border-right: 1px solid #a5b4fc;
   border-bottom: 1px solid #a5b4fc;
+}
+.icone:hover {
+  opacity: 0.5;
 }
