@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+}
+
 body {
   font-family: "Manrope", sans-serif;
   font-size: 1em;
@@ -41,6 +45,7 @@ em {
 header,
 footer {
   background-color: white;
+  padding: 20px 50px 20px 50px;
 }
 .degrade {
   color: white;
@@ -55,7 +60,65 @@ footer {
 .border {
   border-right: 1px solid #a5b4fc;
   border-bottom: 1px solid #a5b4fc;
+  padding: 50px;
 }
 .icone:hover {
   opacity: 0.5;
+}
+
+section {
+  padding: 80px;
+}
+
+.border h2 {
+  margin-top: 30px;
+}
+
+.border ul {
+  margin-top: 30px;
+}
+
+.a-propos-main {
+  margin: auto;
+  width: 50%;
+}
+
+footer,
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a {
+  margin-left: 30px;
+}
+
+.photos {
+  background-color: white;
+  padding: 80px;
+}
+
+.photos h2 {
+  color: #242424;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.photos div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 15px;
+  gap: 15px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: auto;
 }
