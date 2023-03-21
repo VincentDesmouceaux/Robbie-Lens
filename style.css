@@ -38,8 +38,8 @@ em {
   color: #a5b4fc;
 }
 
-.pied-de-page,
-.entete {
+header,
+footer {
   background-color: white;
 }
 .degrade {
