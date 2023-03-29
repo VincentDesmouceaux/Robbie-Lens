@@ -46,6 +46,7 @@ footer {
   background: linear-gradient(90deg, #8e86b5, #acaeed);
   border-radius: 50px;
   padding: 20px 30px;
+  display: inline-block;
 }
 
 a:hover {
@@ -68,6 +69,7 @@ a:hover {
   border-right: 1px solid #a5b4fc;
   border-bottom: 1px solid #a5b4fc;
   padding: 50px;
+  margin-bottom: 80px;
 }
 
 .border h2 {
@@ -76,6 +78,9 @@ a:hover {
 
 .border ul {
   margin-top: 30px;
+}
+.border + div {
+  text-align: center;
 }
 
 section {
@@ -121,10 +126,21 @@ nav a {
 .intro {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
+
+  align-items: flex-start;
+  width: 60%;
   margin: auto;
+}
+
+.intro h1 {
+  margin-bottom: 15px;
+}
+
+.intro p {
+  margin-bottom: 30px;
+}
+.intro div {
+  padding-right: 80px;
 }
 
 .portfolio-section-photos {
@@ -156,4 +172,27 @@ nav a {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 300px 300px;
   gap: 15px;
+}
+
+.lien-conteneur-photo {
+  position: relative;
+}
+
+.photo-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.lien-conteneur-photo:hover .photo-hover {
+  display: flex;
 }
